@@ -174,7 +174,13 @@ label {
   background-position: right bottom;
 }
 
-.border-button:hover .back-to-top-btn:hover {
+.border-button:hover {
+  background-position: left bottom;
+  color: white;
+  cursor: pointer;
+}
+
+.back-to-top-btn:hover {
   background-position: left bottom;
   color: white;
   cursor: pointer;
@@ -260,13 +266,13 @@ label {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1); /* Combine translate and scale */
+  transform: translate(-50%, -50%) scale(1); /* Initial state */
   transform-origin: center; /* Ensures scaling occurs from the center */
-  transition: transform 0.5s ease-in-out; /* Optional: smooth transition */
+  transition: transform 0.5s ease-in-out; /* Smooth transition */
 }
 
 .product-img-wrap:hover .product-image {
-  transform: translate(-50%, -50%) scale(1); /* Ensure consistent transform origin */
+  transform: translate(-50%, -50%) scale(1.1); /* Change the scale value for hover */
 }
 
 .product-warper .product .product-info .title {
@@ -321,6 +327,9 @@ label {
   margin-bottom: 12px;
 }
 
+.card-text {
+  font-size: 16px;
+}
 /* ================ Footer ================== */
 .footer {
   background-color: #dee0e1;

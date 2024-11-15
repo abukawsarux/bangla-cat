@@ -362,8 +362,8 @@
             </div>
           </div>
           <div class="product">
-            <div class="row align-items-center">
-              <div class="col-md-6 order-2">
+            <div class="row d-flex align-items-center">
+              <div class="col-md-6 order-md-2">
                 <div class="product-info">
                   <h2 class="title">
                     GENUINE CAT® PARTS GET IT WHEN YOU NEED IT…
@@ -378,7 +378,7 @@
                   <a href="#" class="border-button">Learn More </a>
                 </div>
               </div>
-              <div class="col-md-6 order-1">
+              <div class="col-md-6">
                 <div class="product-img-wrap position-relative overflow-hidden">
                   <img src="/images/shape.png" alt="Dummy Image" />
                   <img
@@ -419,7 +419,7 @@
           </div>
           <div class="product">
             <div class="row align-items-center">
-              <div class="col-md-6 order-2">
+              <div class="col-md-6 order-md-2">
                 <div class="product-info">
                   <h2 class="title">
                     CAT® DP30P COMPACT & DURABLE FORKLIFT TRUCKS
@@ -433,7 +433,7 @@
                   <a href="#" class="border-button"> Learn More </a>
                 </div>
               </div>
-              <div class="col-md-6 order-1">
+              <div class="col-md-6">
                 <div class="product-img-wrap position-relative overflow-hidden">
                   <img src="/images/shape.png" alt="Dummy Image" />
                   <img
@@ -552,7 +552,7 @@
               </div>
             </div>
           </div>
-          <div class="row">
+          <div class="row d-none d-md-block">
             <div class="col-12">
               <div class="w-100 text-center mt-5">
                 <a href="#" class="back-to-top-btn">
@@ -600,7 +600,38 @@
               </div>
             </div>
           </div>
-          <div class="footer-middle">
+          <!-- Mobile -->
+          <!-- <p class="d-inline-flex gap-1">
+            <a
+              class="btn btn-primary"
+              data-bs-toggle="collapse"
+              href="#collapseExample"
+              role="button"
+              aria-expanded="false"
+              aria-controls="collapseExample"
+            >
+              Link with href
+            </a>
+            <button
+              class="btn btn-primary"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseExample"
+              aria-expanded="false"
+              aria-controls="collapseExample"
+            >
+              Button with data-bs-target
+            </button>
+          </p>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+              Some placeholder content for the collapse component. This panel is
+              hidden by default but revealed when the user activates the
+              relevant trigger.
+            </div>
+          </div> -->
+          <!-- Desktop -->
+          <div class="footer-middle d-none d-md-grid">
             <div>
               <h5>Company</h5>
               <div class="footer-links">
@@ -634,8 +665,10 @@
               <h5>Contacts</h5>
             </div>
           </div>
-          <div class="footer-bottom row align-items-center justify-content">
-            <div class="col-md-3">
+          <div
+            class="footer-bottom row align-items-center justify-content mt-4"
+          >
+            <div class="col-md-3 d-none d-md-block">
               <h3
                 class="text-uppercase text-center text-white mb-0"
                 style="background-color: #00357d"
@@ -643,7 +676,7 @@
                 Bangla Track
               </h3>
             </div>
-            <div class="col-md-7">
+            <div class="col-12 col-md-7">
               <p class="mb-0 text-center">
                 <span id="year"></span> - BanglaCAT®. All rights reserved.
                 Developed by Bangla Trac Group Brand Management.
@@ -655,8 +688,18 @@
                   new Date().getFullYear();
               </script>
             </div>
-            <div class="col-md-2">
-              <img src="/images/bcat.png" alt="" class="w-50" />
+            <div class="col-md-2 d-none d-md-block text-center">
+              <img src="/images/bcat.png" alt="" class="w-50 mx-auto" />
+            </div>
+          </div>
+          <div class="row d-md-none">
+            <div class="col-12">
+              <div class="w-100 text-center mt-5">
+                <a href="#" class="back-to-top-btn">
+                  <i class="bi bi-caret-up-fill"></i>
+                  Back to top
+                </a>
+              </div>
             </div>
           </div>
         </div>
