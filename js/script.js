@@ -33,7 +33,3 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 //   <!-- Initialize Swiper -->
-
-var swiper = new Swiper(".mySwiper", {
-  navigation: {},
-});
