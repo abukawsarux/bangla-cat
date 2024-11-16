@@ -199,6 +199,111 @@ label {
 }
 
 /* ================ Header Styling ================ */
+/* ================ Nav popup container start ================ */
+
+.nav-popup-container {
+  display: none;
+  background: #2d2d2df2 0% 0% no-repeat padding-box;
+  position: absolute;
+  top: 85px;
+  border-top: 2px solid #fab600;
+  left: 0;
+  z-index: 9999;
+}
+
+.nav-popup-container > h4 {
+  max-width: 90%;
+  margin: 10px auto;
+  text-align: start;
+  color: #fab600;
+}
+
+.nav-popup-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 90%;
+  margin: 0 auto;
+}
+.nav-popup-grid div:first-child {
+  border-right: 1px solid #707070;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  overflow: visible;
+}
+
+.main-nav > li {
+  overflow: visible;
+}
+
+.main-nav > li:last-child {
+  border-bottom: 1px solid #707070;
+}
+
+.main-nav a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  border-top: 1px solid #707070;
+  transition: background-color 0.3s;
+}
+
+.main-nav a:hover {
+  color: #fab600;
+}
+
+.main-nav li:hover > a {
+  color: #fab600;
+}
+
+.sub-nav {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: black;
+  border: 1px solid #ddd;
+  z-index: 10;
+  visibility: visible;
+}
+
+.sub-nav li {
+  display: block;
+}
+
+.sub-nav a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333;
+  background-color: #f0f0f0;
+}
+
+.sub-nav a:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.pd-container {
+  text-align: start;
+  margin-left: 20px;
+}
+
+.pd-container > h4 {
+  color: #fab600;
+}
+
+.pd-container > p {
+  color: white;
+}
+.pd-container img {
+  border: 1px solid #ddd;
+  margin-top: 15px;
+}
+
+/* ================ Nav popup container end ================ */
 
 /* ================ Hero Section ================ */
 .slider-content {
