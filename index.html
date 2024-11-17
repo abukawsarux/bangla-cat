@@ -33,13 +33,11 @@
   </head>
   <body>
     <!-- Header Section -->
-    <header class="bg-dark text-white text-center overflow-hidden">
-      <div>
+    <header class="text-white text-center overflow-hidden">
+      <div class="">
         <!-- Navbar -->
 
-        <nav
-          class="navbar navbar-expand-lg bg-dark text-white position-relative overflow-visible"
-        >
+        <nav class="navbar navbar-expand-lg bg-dark text-white">
           <div class="container">
             <div class="d-flex align-items-center gap-3">
               <a class="navbar-brand" href="#"
@@ -82,70 +80,34 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav text-white ms-auto mb-2 mb-lg-0">
                 <li class="nav-item text-uppercase fw-semibold">
-                  <a class="nav-link menu-link" aria-current="page" href="#"
+                  <a
+                    class="nav-link text-white active"
+                    aria-current="page"
+                    href="#"
                     >PRODUCTS</a
                   >
-                  <section class="nav-popup-container">
-                    <h4 class="">PARTS</h4>
-                    <div class="nav-popup-grid">
-                      <div class="overflow-visible position-relative">
-                        <ul class="main-nav">
-                          <li class="nav-item"><a href="#">Home</a></li>
-                          <li class="nav-item">
-                            <a href="#" class="menu-link nested">About</a>
-                            <ul class="sub-nav">
-                              <li><a href="#">Team</a></li>
-                              <li><a href="#">History</a></li>
-                              <li><a href="#">Mission</a></li>
-                            </ul>
-                          </li>
-                          <li class="nav-item">
-                            <a href="#" class="menu-link nested">Services</a>
-                            <ul class="sub-nav">
-                              <li><a href="#">Consulting</a></li>
-                              <li><a href="#">Development</a></li>
-                              <li><a href="#">Design</a></li>
-                            </ul>
-                          </li>
-                          <li><a href="#">Contact</a></li>
-                        </ul>
-                      </div>
-                      <div class="empty-div"></div>
-                      <div class="pd-container">
-                        <h4>Genuine Cat Parts</h4>
-                        <p>
-                          Chose Genuine CAT Parts for top reliablity, ensuring
-                          smooth engine operation. With years of expertise,
-                          BanglaCat offers all the authentic
-                        </p>
-                        <img
-                          src="https://placehold.co/495x278"
-                          alt="product image "
-                        />
-                        <a href="#" class="brouse-btn">BROWSE CAT PARTS</a>
-                      </div>
-                    </div>
-                  </section>
                 </li>
                 <li class="nav-item text-uppercase fw-semibold">
-                  <a class="nav-link" href="#">SERVICES</a>
+                  <a class="nav-link text-white" href="#">SERVICES</a>
                 </li>
 
                 <li class="nav-item text-uppercase fw-semibold">
-                  <a class="nav-link disabled" aria-disabled="true">PARTS</a>
+                  <a class="nav-link text-white disabled" aria-disabled="true"
+                    >PARTS</a
+                  >
                 </li>
                 <li class="nav-item text-uppercase fw-semibold">
-                  <a class="nav-link disabled" aria-disabled="true"
+                  <a class="nav-link text-white disabled" aria-disabled="true"
                     >TECHNOLOGY</a
                   >
                 </li>
                 <li class="nav-item text-uppercase fw-semibold">
-                  <a class="nav-link disabled" aria-disabled="true"
+                  <a class="nav-link text-white disabled" aria-disabled="true"
                     >GET QUOTE</a
                   >
                 </li>
                 <li class="nav-item text-uppercase fw-semibold">
-                  <a class="nav-link disabled" aria-disabled="true"
+                  <a class="nav-link text-white disabled" aria-disabled="true"
                     ><i class="bi bi-searc"></i
                   ></a>
                 </li>
@@ -154,13 +116,18 @@
           </div>
         </nav>
         <!-- Hero Section -->
+
         <section class="d-none d-md-block row align-items-center">
           <div class="col-md-12 text-center">
-            <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div
+              id="carouselExampleSlidesOnly"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
               <div class="carousel-indicators">
                 <button
                   type="button"
-                  data-bs-target="#carouselExampleDark"
+                  data-bs-target="#carouselExampleSlidesOnly"
                   data-bs-slide-to="0"
                   class="active slider-dot"
                   aria-current="true"
@@ -168,42 +135,42 @@
                 ></button>
                 <button
                   type="button"
-                  data-bs-target="#carouselExampleDark"
+                  data-bs-target="#carouselExampleSlidesOnly"
                   data-bs-slide-to="1"
                   aria-label="Slide 2"
                   class="slider-dot"
                 ></button>
                 <button
                   type="button"
-                  data-bs-target="#carouselExampleDark"
+                  data-bs-target="#carouselExampleSlidesOnly"
                   data-bs-slide-to="2"
                   aria-label="Slide 3"
                   class="slider-dot"
                 ></button>
                 <button
                   type="button"
-                  data-bs-target="#carouselExampleDark"
+                  data-bs-target="#carouselExampleSlidesOnly"
                   data-bs-slide-to="3"
                   aria-label="Slide 4"
                   class="slider-dot"
                 ></button>
                 <button
                   type="button"
-                  data-bs-target="#carouselExampleDark"
+                  data-bs-target="#carouselExampleSlidesOnly"
                   data-bs-slide-to="4"
                   aria-label="Slide 5"
                   class="slider-dot"
                 ></button>
                 <button
                   type="button"
-                  data-bs-target="#carouselExampleDark"
+                  data-bs-target="#carouselExampleSlidesOnly"
                   data-bs-slide-to="5"
                   aria-label="Slide 6"
                   class="slider-dot"
                 ></button>
               </div>
               <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="10000">
+                <div class="carousel-item active" data-bs-interval="2000">
                   <img src="images/banner-1.jpg" class="d-block w-100" alt="" />
                   <div class="carousel-caption slider-content">
                     <div>
@@ -234,7 +201,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-bs-interval="2000">
                   <img src="images/banner-1.jpg" class="d-block w-100" alt="" />
                   <div class="carousel-caption slider-content">
                     <div>
@@ -252,7 +219,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-bs-interval="2000">
                   <img src="images/banner-1.jpg" class="d-block w-100" alt="" />
                   <div class="carousel-caption slider-content">
                     <div>
@@ -265,7 +232,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-bs-interval="2000">
                   <img src="images/banner-1.jpg" class="d-block w-100" alt="" />
                   <div class="carousel-caption slider-content">
                     <div>
@@ -282,7 +249,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-bs-interval="2000">
                   <img src="images/banner-1.jpg" class="d-block w-100" alt="" />
                   <div class="carousel-caption slider-content">
                     <div>
@@ -302,13 +269,13 @@
           </div>
         </section>
         <!-- Mobile Slider -->
-        <section class="row align-items-center d-md-none">
+        <!-- <section class="row align-items-center d-md-none">
           <div class="col-md-12 text-center">
-            <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div id="carouselExampleSlidesOnly" class="carousel carousel-dark slide">
               <div class="carousel-indicators">
                 <button
                   type="button"
-                  data-bs-target="#carouselExampleDark"
+                  data-bs-target="#carouselExampleSlidesOnly"
                   data-bs-slide-to="0"
                   class="active slider-dot"
                   aria-current="true"
@@ -316,35 +283,35 @@
                 ></button>
                 <button
                   type="button"
-                  data-bs-target="#carouselExampleDark"
+                  data-bs-target="#carouselExampleSlidesOnly"
                   data-bs-slide-to="1"
                   aria-label="Slide 2"
                   class="slider-dot"
                 ></button>
                 <button
                   type="button"
-                  data-bs-target="#carouselExampleDark"
+                  data-bs-target="#carouselExampleSlidesOnly"
                   data-bs-slide-to="2"
                   aria-label="Slide 3"
                   class="slider-dot"
                 ></button>
                 <button
                   type="button"
-                  data-bs-target="#carouselExampleDark"
+                  data-bs-target="#carouselExampleSlidesOnly"
                   data-bs-slide-to="3"
                   aria-label="Slide 4"
                   class="slider-dot"
                 ></button>
                 <button
                   type="button"
-                  data-bs-target="#carouselExampleDark"
+                  data-bs-target="#carouselExampleSlidesOnly"
                   data-bs-slide-to="4"
                   aria-label="Slide 5"
                   class="slider-dot"
                 ></button>
                 <button
                   type="button"
-                  data-bs-target="#carouselExampleDark"
+                  data-bs-target="#carouselExampleSlidesOnly"
                   data-bs-slide-to="5"
                   aria-label="Slide 6"
                   class="slider-dot"
@@ -382,7 +349,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-bs-interval="2000">
                   <img src="images/banner-1.jpg" class="d-block w-100" alt="" />
                   <div class="container slider-content">
                     <div>
@@ -400,7 +367,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-bs-interval="2000">
                   <img src="images/banner-1.jpg" class="d-block w-100" alt="" />
                   <div class="container slider-content">
                     <div>
@@ -413,7 +380,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-bs-interval="2000">
                   <img src="images/banner-1.jpg" class="d-block w-100" alt="" />
                   <div class="container slider-content">
                     <div>
@@ -430,7 +397,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-bs-interval="2000">
                   <img src="images/banner-1.jpg" class="d-block w-100" alt="" />
                   <div class="container slider-content">
                     <div>
@@ -448,7 +415,7 @@
               </div>
             </div>
           </div>
-        </section>
+        </section> -->
       </div>
     </header>
 
