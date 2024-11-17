@@ -413,6 +413,10 @@ label {
 
 .stories-card {
   border: 1px solid #9999;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* Ensures cards have equal height */
 }
 
 .stories-card img {
@@ -428,6 +432,7 @@ label {
   gap: 16px;
   justify-content: space-between;
   align-items: start;
+  height: 100%;
 }
 .stories-img-wrap {
   overflow: hidden;
@@ -605,5 +610,147 @@ label {
 .image-24-7:hover img {
   transform: scale(1.1);
 }
+/*================ mobile support center  */
+.main-circle {
 
+  width: 60px;
+
+  height: 60px;
+
+  background-color: #fcdb45;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: white;
+
+  cursor: pointer;
+
+  font-weight: bold;
+
+  position: relative;
+
+  z-index: 2;
+
+}
+
+
+
+.circle {
+
+  width: 40px;
+
+  height: 40px;
+
+  background-color: #fab600;
+
+  border-radius: 50%;
+
+  position: absolute;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: white;
+
+  opacity: 0;
+
+  transition: all 0.3s ease;
+
+}
+
+
+
+/* Initial positions - much tighter vertical spacing */
+
+.circle:nth-child(1) {
+
+  transform: translate(-45px, -15px) scale(0);
+
+}
+
+
+
+.circle:nth-child(2) {
+
+  transform: translate(-50px, 0) scale(0);
+
+}
+
+
+
+.circle:nth-child(3) {
+
+  transform: translate(-45px, 15px) scale(0);
+
+}
+
+
+
+/* Hover effect */
+.menu-wrapper{
+  position: fixed;
+  bottom: 40px;
+  right: 50px;
+}
+
+.menu-wrapper:hover .circle {
+
+  opacity: 1;
+
+}
+
+
+
+.menu-wrapper:hover .circle:nth-child(1) {
+
+  transform: translate(-45px, -50px) scale(1);
+
+  transition-delay: 0.1s;
+
+}
+
+
+
+.menu-wrapper:hover .circle:nth-child(2) {
+
+  transform: translate(-70px, 0) scale(1);
+
+  transition-delay: 0.2s;
+
+}
+
+
+
+.menu-wrapper:hover .circle:nth-child(3) {
+
+  transform: translate(-45px, 50px) scale(1);
+
+  transition-delay: 0.3s;
+
+}
+
+
+
+/* Make circles slightly overlap */
+
+.circle:nth-child(1),
+
+.circle:nth-child(2),
+
+.circle:nth-child(3) {
+
+  margin-top: -5px;  /* Creates slight overlap */
+
+}
+
+/* support center  */
 /* ================ End of CSS ================== */
