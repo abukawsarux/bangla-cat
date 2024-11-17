@@ -32,4 +32,30 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+// Get all the menu links
+const menuLinks = document.querySelectorAll(".menu-link");
+
+// Add a click event listener to each menu link
+menuLinks.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    // Prevent the default link behavior
+    event.preventDefault();
+
+    // Get the associated sub-nav for the clicked link
+    const subNav = link.nextElementSibling;
+    
+    if (link.classList.contains("nested")) {
+      subNav.style.width = link.clientWidth + "px";
+      subNav.style.border = "1px solid #ddd";
+    }
+
+    // Toggle the display of the sub-nav
+    if (subNav.style.display === "block") {
+      subNav.style.display = "none";
+    } else {
+      subNav.style.display = "block";
+    }
+  });
+});
+
 //   <!-- Initialize Swiper -->

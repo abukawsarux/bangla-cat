@@ -33,11 +33,13 @@
   </head>
   <body>
     <!-- Header Section -->
-    <header class="text-white text-center overflow-hidden">
-      <div class="">
+    <header class="bg-dark text-white text-center">
+      <div>
         <!-- Navbar -->
 
-        <nav class="navbar navbar-expand-lg bg-dark text-white">
+        <nav
+          class="navbar navbar-expand-lg bg-dark text-white position-relative overflow-visible"
+        >
           <div class="container">
             <div class="d-flex align-items-center gap-3">
               <a class="navbar-brand" href="#"
@@ -81,11 +83,52 @@
               <ul class="navbar-nav text-white ms-auto mb-2 mb-lg-0">
                 <li class="nav-item text-uppercase fw-semibold">
                   <a
-                    class="nav-link text-white active"
+                    class="nav-link text-white active menu-link"
                     aria-current="page"
                     href="#"
                     >PRODUCTS</a
                   >
+                  <section class="nav-popup-container">
+                    <h4 class="">PARTS</h4>
+                    <div class="nav-popup-grid">
+                      <div class="overflow-visible position-relative">
+                        <ul class="main-nav">
+                          <li><a href="#">Home</a></li>
+                          <li>
+                            <a href="#">About</a>
+                            <ul class="sub-nav">
+                              <li><a href="#">Team</a></li>
+                              <li><a href="#">History</a></li>
+                              <li><a href="#">Mission</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#" class="menu-link nested">Services</a>
+                            <ul class="sub-nav">
+                              <li><a href="#">Consulting</a></li>
+                              <li><a href="#">Development</a></li>
+                              <li><a href="#">Design</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#">Contact</a></li>
+                        </ul>
+                      </div>
+                      <div class="position-relative z-0"></div>
+                      <div class="pd-container">
+                        <h4>Genuine Cat Parts</h4>
+                        <p>
+                          Chose Genuine CAT Parts for top reliablity, ensuring
+                          smooth engine operation. With years of expertise,
+                          BanglaCat offers all the authentic
+                        </p>
+                        <img
+                          src="https://placehold.co/495x278"
+                          alt="product image "
+                        />
+                        <a href="#" class="btn">BROWSE CAT PARTS</a>
+                      </div>
+                    </div>
+                  </section>
                 </li>
                 <li class="nav-item text-uppercase fw-semibold">
                   <a class="nav-link text-white" href="#">SERVICES</a>
