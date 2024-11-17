@@ -43,18 +43,37 @@ menuLinks.forEach((link) => {
 
     // Get the associated sub-nav for the clicked link
     const subNav = link.nextElementSibling;
-    
-    if (link.classList.contains("nested")) {
-      subNav.style.width = link.clientWidth + "px";
-      subNav.style.border = "1px solid #ddd";
+    const isNested = link.classList.contains("nested");
+    const nestedContainer = document.querySelector(".sub-nav.active-p");
+    const activeContainer = document.querySelector(
+      ".nav-popup-container.active-p"
+    );
+
+    if (isNested && nestedContainer) {
+      nestedContainer.classList.remove("active-p");
+    } else {
+      subNav.classList.remove("active-p");
+    }
+    if (!isNested && activeContainer) {
+      activeContainer.classList.remove("active-p");
+    } else {
+      subNav.classList.add("active-p");
     }
 
-    // Toggle the display of the sub-nav
-    if (subNav.style.display === "block") {
-      subNav.style.display = "none";
-    } else {
-      subNav.style.display = "block";
+    if (isNested) {
+      const emptyContainer = document.querySelector(".empty-div");
+      emptyContainer.style.borderRight = "1px solid #707070";
+      subNav.style.width = link.clientWidth + "px";
     }
+
+    // // Toggle the display of the sub-nav
+    // if (subNav.style.display === "block") {
+    //   subNav.style.display = "none";
+    //   link.style.color = "white";
+    // } else {
+    //   link.style.color = "#fab600";
+    //   subNav.style.display = "block";
+    // }
   });
 });
 
