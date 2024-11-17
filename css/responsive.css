@@ -35,6 +35,10 @@
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
   /* ================ Buttons ================== */
+  .carousel-inner {
+    min-height: 55vh;
+    height: 100%;
+  }
   .hero-btn {
     background: #fab600 !important;
     color: #000 !important;
@@ -70,6 +74,10 @@
   }
   .carousel-indicators .slider-dot.active {
     background-color: #000 !important;
+  }
+  .key-business-section {
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   .product-warper {
     gap: 30px;
