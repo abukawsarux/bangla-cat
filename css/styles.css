@@ -201,14 +201,19 @@ label {
 /* ================ Header Styling ================ */
 /* ================ Nav popup container start ================ */
 
+.nav-item .nav-link {
+  color: white;
+}
+
 .nav-popup-container {
   display: none;
   background: #2d2d2df2 0% 0% no-repeat padding-box;
   position: absolute;
   top: 85px;
-  border-top: 2px solid #fab600;
+  border-top: 4px solid #fab600;
   left: 0;
   z-index: 9999;
+  transition: all 0.3s ease-in-out;
 }
 
 .nav-popup-container > h4 {
@@ -238,7 +243,8 @@ label {
   overflow: visible;
 }
 
-.main-nav > li:last-child {
+.main-nav > li:last-child,
+.sub-nav > li:last-child {
   border-bottom: 1px solid #707070;
 }
 
@@ -251,11 +257,8 @@ label {
   transition: background-color 0.3s;
 }
 
+.main-nav li:hover > a,
 .main-nav a:hover {
-  color: #fab600;
-}
-
-.main-nav li:hover > a {
   color: #fab600;
 }
 
@@ -264,8 +267,6 @@ label {
   position: absolute;
   top: 0;
   left: 100%;
-  background-color: black;
-  border: 1px solid #ddd;
   z-index: 10;
   visibility: visible;
 }
@@ -277,18 +278,13 @@ label {
 .sub-nav a {
   padding: 10px 20px;
   text-decoration: none;
-  color: #333;
-  background-color: #f0f0f0;
-}
-
-.sub-nav a:hover {
-  background-color: #007bff;
   color: white;
 }
 
 .pd-container {
   text-align: start;
   margin-left: 20px;
+  padding-bottom: 20px;
 }
 
 .pd-container > h4 {
@@ -301,6 +297,23 @@ label {
 .pd-container img {
   border: 1px solid #ddd;
   margin-top: 15px;
+}
+
+.brouse-btn {
+  color: white;
+  font-size: 28px;
+  letter-spacing: 0;
+  margin: 0;
+  border-bottom: 2px solid #fab600;
+}
+
+.active-p {
+  display: block;
+  color: #fab600;
+}
+
+.nav-item:has(.active-p) > a {
+  color: #fab600;
 }
 
 /* ================ Nav popup container end ================ */
