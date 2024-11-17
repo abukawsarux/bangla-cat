@@ -8,6 +8,18 @@
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
+  .slider-content h5 {
+    font-size: 14px;
+  }
+  .slider-content h2 {
+    font-size: 30px;
+  }
+  .slider-content p {
+    font-size: 16px;
+  }
+  .section-title {
+    font-size: 24px;
+  }
   .customer-care {
     display: block;
   }
@@ -23,8 +35,44 @@
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
   /* ================ Buttons ================== */
+  .hero-btn {
+    background: #fab600 !important;
+    color: #000 !important;
+  }
+  .slider-content {
+    top: 100%;
+    transform: translateY(0);
+    text-align: start;
+    margin: 15px 14px 40px 0px;
+    transition: 0.5s;
+  }
+  .slider-content h5 {
+    color: black;
+    font-size: 12px;
+  }
+  .slider-content h2 {
+    color: black !important;
+    font-size: 20px;
+  }
+  .slider-content p {
+    font-size: 14px;
+  }
   .section-title {
     font-size: 24px;
+  }
+  .carousel-indicators .slider-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    border: 1px solid #000;
+    background-color: transparent !important;
+    opacity: 1;
+  }
+  .carousel-indicators .slider-dot.active {
+    background-color: #000 !important;
+  }
+  .product-warper {
+    gap: 30px;
   }
   .product-warper .product .product-info .title {
     font-size: 20px;

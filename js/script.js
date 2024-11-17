@@ -59,7 +59,3 @@ menuLinks.forEach((link) => {
 });
 
 //   <!-- Initialize Swiper -->
-
-var swiper = new Swiper(".mySwiper", {
-  navigation: {},
-});
