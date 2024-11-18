@@ -1,4 +1,25 @@
 /* ================ Global CSS Start ================== */
+@font-face {
+  font-family: "UniversCondensed";
+  src: url("../fonts/universcondensed_medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "UniversCondensed";
+  src: url("../fonts/universcondensed_bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "UniversCondensed";
+  src: url("../fonts/universcondensed_mediumitalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +29,7 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "UniversCondensed", sans-serif;
   font-weight: normal;
   font-style: normal;
   color: #000;
@@ -82,7 +103,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Poppins", sans-serif;
+  font-family: "UniversCondensed", sans-serif;
   margin-top: 0;
   font-style: normal;
   font-weight: 600;
@@ -160,7 +181,7 @@ label {
 .back-to-top-btn {
   font-size: 16px;
   text-align: center;
-  font-family: "Poppins", sans-serif;
+  font-family: "UniversCondensed", sans-serif;
   font-weight: bold;
   line-height: 16px;
   text-transform: uppercase;
