@@ -30,6 +30,12 @@
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
+  .desktop-nav {
+    display: none;
+  }
+  #mobile-nav {
+    display: flex;
+  }
 }
 
 /* Portrait phones and smaller */

@@ -37,7 +37,8 @@
       <div>
         <!-- Navbar -->
 
-        <nav class="navbar navbar-expand-lg bg-dark text-white">
+        <!-- desktop nav start -->
+        <nav class="navbar navbar-expand-lg bg-dark text-white desktop-nav">
           <div class="container">
             <div class="d-flex align-items-center gap-3">
               <a class="navbar-brand" href="#"
@@ -304,6 +305,70 @@
             </div>
           </div>
         </nav>
+        <!-- desktop nav end -->
+
+        <!-- mobile nav start -->
+
+        <div id="mobile-nav">
+          <!-- Logo -->
+          <div class="logo">
+            <img src="logo.png" alt="Logo" />
+          </div>
+
+          <!-- Icons -->
+          <div>
+            <span id="search-icon">🔍</span>
+            <span id="hamburger-icon">☰</span>
+          </div>
+        </div>
+
+        <!-- Full-Page Menu -->
+        <div id="full-page-menu">
+          <span id="close-menu">✕</span>
+          <ul>
+            <li>
+              <span class="parent-link"
+                >PRODUCTS<span class="caret">▶</span></span
+              >
+              <ul class="nested-links">
+                <li>
+                  <span class="parent-link"
+                    >Power Solutions <span class="caret">▶</span></span
+                  >
+                  <ul class="sub-nested-links">
+                    <li><a href="#">Sub-Nested Link 1</a></li>
+                    <li><a href="#">Sub-Nested Link 2</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">EPC</a></li>
+                <li><a href="#">Marine Solutions</a></li>
+                <li><a href="#">Heavy Machinery & Equipment New & Used</a></li>
+                <li><a href="#">Material Handling Applications</a></li>
+                <li><a href="#">Rental Solutions</a></li>
+              </ul>
+            </li>
+            <li>
+              <span class="parent-link">SERVICES </span>
+            </li>
+            <li><a href="#">PARTS</a></li>
+            <li><a href="#">TECHNOLOGY</a></li>
+            <li><a href="#">GET QUOTE</a></li>
+          </ul>
+        </div>
+
+        <!-- Full-Page Search -->
+        <div id="full-page-search">
+          <span id="close-search">✕</span>
+          <form>
+            <h3>SEARCH</h3>
+            <div class="container-search">
+              <input type="text" placeholder="What are you looking for?" />
+              <button type="submit"><span id="search-icon">🔍</span></button>
+            </div>
+          </form>
+        </div>
+
+        <!-- mobile nav end -->
 
         <!-- Hero Section -->
 
