@@ -38,42 +38,34 @@ const menuLinks = document.querySelectorAll(".menu-link");
 // Add a click event listener to each menu link
 menuLinks.forEach((link) => {
   link.addEventListener("click", (event) => {
-    // Prevent the default link behavior
     event.preventDefault();
 
-    // Get the associated sub-nav for the clicked link
-    const subNav = link.nextElementSibling;
-    const isNested = link.classList.contains("nested");
-    const nestedContainer = document.querySelector(".sub-nav.active-p");
+    const subNav = link.nextElementSibling; // Get the associated sub-nav
+    const isNested = link.classList.contains("nested"); // Check if it's nested
+    const activeNested = document.querySelector(".sub-nav.active-p"); // Currently active sub-nav
     const activeContainer = document.querySelector(
       ".nav-popup-container.active-p"
-    );
+    ); // Currently active nav-popup-container
 
-    if (isNested && nestedContainer) {
-      nestedContainer.classList.remove("active-p");
-    } else {
-      subNav.classList.remove("active-p");
+    // Remove active class from previously active nested sub-nav
+    if (isNested && activeNested) {
+      activeNested.classList.remove("active-p");
     }
+
+    // Remove active class from non-nested active container
     if (!isNested && activeContainer) {
       activeContainer.classList.remove("active-p");
-    } else {
-      subNav.classList.add("active-p");
     }
 
-    if (isNested) {
+    // Add active class to the clicked sub-nav if not already active
+    if (isNested && subNav !== activeNested) {
+      subNav.classList.add("active-p");
       const emptyContainer = document.querySelector(".empty-div");
       emptyContainer.style.borderRight = "1px solid #707070";
       subNav.style.width = link.clientWidth + "px";
+    } else if (!isNested && subNav !== activeContainer) {
+      subNav.classList.add("active-p");
     }
-
-    // // Toggle the display of the sub-nav
-    // if (subNav.style.display === "block") {
-    //   subNav.style.display = "none";
-    //   link.style.color = "white";
-    // } else {
-    //   link.style.color = "#fab600";
-    //   subNav.style.display = "block";
-    // }
   });
 });
 
