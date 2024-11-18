@@ -60,11 +60,21 @@ menuLinks.forEach((link) => {
     // Add active class to the clicked sub-nav if not already active
     if (isNested && subNav !== activeNested) {
       subNav.classList.add("active-p");
-      const emptyContainer = document.querySelector(".empty-div");
-      emptyContainer.style.borderRight = "1px solid #707070";
+      const emptyContainer = link
+        .closest(".nav-popup-container")
+        .querySelector(".empty-div");
+      if (emptyContainer) {
+        emptyContainer.style.borderRight = "1px solid #707070";
+      }
       subNav.style.width = link.clientWidth + "px";
     } else if (!isNested && subNav !== activeContainer) {
       subNav.classList.add("active-p");
+      const emptyContainer = link
+        .closest(".nav-popup-container")
+        .querySelector(".empty-div");
+      if (emptyContainer) {
+        emptyContainer.style.borderRight = "1px solid #707070";
+      }
     }
   });
 });
