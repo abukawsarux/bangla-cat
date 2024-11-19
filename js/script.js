@@ -89,19 +89,19 @@ const closeSearch = document.getElementById("close-search");
 const parentLinks = document.querySelectorAll(".parent-link");
 
 // Open full-page menu
-hamburgerIcon.addEventListener("click", () => {
-  fullPageMenu.classList.add("active");
-});
+// hamburgerIcon.addEventListener("click", () => {
+//   fullPageMenu.classList.add("active");
+// });
 
 // Close full-page menu
 closeMenu.addEventListener("click", () => {
   fullPageMenu.classList.remove("active");
 });
 
-// Open full-page search
-searchIcon.addEventListener("click", () => {
-  fullPageSearch.classList.add("active");
-});
+// // Open full-page search
+// searchIcon.addEventListener("click", () => {
+//   fullPageSearch.classList.add("active");
+// });
 
 // Close full-page search
 closeSearch.addEventListener("click", () => {
