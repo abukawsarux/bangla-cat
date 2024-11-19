@@ -225,16 +225,80 @@ label {
 .nav-item .nav-link {
   color: white;
 }
+.nav-item .nav-link:hover {
+  color: #fab600;
+}
+.nav-item {
+  position: relative;
+}
 
+/* Make the navbar relative for dropdown positioning reference */
+.navbar {
+  position: relative;
+}
+
+/* Full width mega menu styling */
 .nav-popup-container {
   display: none;
-  background: #2d2d2df2 0% 0% no-repeat padding-box;
-  position: absolute;
-  top: 85px;
+  background: #2d2d2df2;
+  position: fixed; /* Change to fixed for full width */
+  top: 100px;
   border-top: 4px solid #fab600;
   left: 0;
+  right: 0; /* Ensure full width */
+  width: 100vw; /* Full viewport width */
   z-index: 9999;
-  transition: all 0.3s ease-in-out;
+  padding-top: 20px;
+  margin-top: -20px;
+}
+
+/* Container for mega menu content - keeps content aligned with navbar */
+.nav-popup-grid {
+  max-width: 1200px; /* Match your main container width */
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Create hover bridge */
+.menu-link::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background: transparent;
+}
+
+/* Show dropdown on hover */
+.nav-item:hover .nav-popup-container,
+.nav-popup-container:hover {
+  display: block;
+}
+
+/* Smooth transition */
+.nav-popup-container {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+
+.nav-item:hover .nav-popup-container,
+.nav-popup-container:hover {
+  opacity: 1;
+  visibility: visible;
+  display: block;
+}
+
+/* Ensure container aligns with navbar container */
+.nav-popup-grid {
+  width: 100%;
+  max-width: var(
+    --container-width,
+    1200px
+  ); /* Use CSS variable if you have one */
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .nav-popup-container > h4 {
