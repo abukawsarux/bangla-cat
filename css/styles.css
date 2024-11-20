@@ -597,18 +597,11 @@ label {
 }
 
 .key-business-section .business-card-wrap .business-card {
-  background-color: #555;
-  display: inline-block;
-  overflow: hidden;
-  margin: 2px;
-  border: 1px solid #999;
 }
 .key-business-section .business-card-wrap .business-card img {
   width: 100%;
 }
 .key-business-section .business-card-wrap .business-card img:hover {
-  scale: 1.1;
-  transition-duration: 0.3s;
 }
 /* ================ Products ================== */
 .section-title {
@@ -678,13 +671,11 @@ label {
   height: 100%;
 }
 .stories-img-wrap {
-  overflow: hidden;
-}
-.stories-img-wrap img {
   width: 100%;
 }
+
 .stories-img-wrap img:hover {
-  scale: 1.1;
+  scale: 0.98;
 }
 .card-title {
   font-size: 24px;
@@ -736,18 +727,13 @@ label {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 24px;
   border-radius: 0 0 15px 15px;
 }
 
-.footer .social-icon {
-  width: 35px;
-  height: 35px;
-  border-radius: 100%;
-  border: 1px solid #000000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.footer .social-icon img {
+  width: 28px;
+  height: auto;
 }
 
 .footer .customer-care {
@@ -846,12 +832,13 @@ label {
   width: 60px;
   height: 60px;
   border: 2px solid #fab600;
-  background-color: #fcdb45;
+  background-color: #fcf0b9;
   transition: transform 0.3s ease-in-out;
 }
 
 .image-24-7:hover img {
   transform: scale(1.1);
+  background-color: #f6d479;
 }
 /*================ mobile support center  */
 .main-circle {
