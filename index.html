@@ -313,67 +313,264 @@
         <!-- desktop nav end -->
 
         <!-- mobile nav start -->
-        <!-- ========================================= -->
-
-        <!-- ========================================= -->
-
-        <!-- <div id="mobile-nav"> -->
-        <!-- Logo -->
-        <!-- <div class="logo">
-            <img src="images/main_logo.png" alt="Logo" />
-          </div> -->
-
-        <!-- Icons -->
-        <!-- <div class="d-flex align-items-center gap-2">
-            <i id="search-icon" class="bi bi-search"></i>
-            <span id="hamburger-icon">☰</span>
-          </div>
-        </div> -->
-
-        <!-- Full-Page Menu -->
-        <div id="full-page-menu">
-          <span id="close-menu">✕</span>
-          <ul>
-            <li>
-              <span class="parent-link"
-                >PRODUCTS<span class="caret">▶</span></span
+        <div class="mobile-header d-lg-none bg-dark">
+          <div class="mobile-logo-section">
+            <img src="images/main_logo.svg" alt="Bangla CAT" />
+            <div class="d-flex align-items-center">
+              <button class="mobile-search-icon me-2">
+                <i class="bi bi-search text-white"></i>
+              </button>
+              <button
+                class="mobile-menu-toggler"
+                type="button"
+                id="mobileMenuToggle"
               >
-              <ul class="nested-links">
-                <li>
-                  <span class="parent-link"
-                    >Power Solutions <span class="caret">▶</span></span
-                  >
-                  <ul class="sub-nested-links">
-                    <li><a href="#">Sub-Nested Link 1</a></li>
-                    <li><a href="#">Sub-Nested Link 2</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">EPC</a></li>
-                <li><a href="#">Marine Solutions</a></li>
-                <li><a href="#">Heavy Machinery & Equipment New & Used</a></li>
-                <li><a href="#">Material Handling Applications</a></li>
-                <li><a href="#">Rental Solutions</a></li>
-              </ul>
-            </li>
-            <li>
-              <span class="parent-link">SERVICES </span>
-            </li>
-            <li><a href="#">PARTS</a></li>
-            <li><a href="#">TECHNOLOGY</a></li>
-            <li><a href="#">GET QUOTE</a></li>
-          </ul>
+                <i class="bi bi-list mobile-menu-icon text-white"></i>
+              </button>
+            </div>
+          </div>
         </div>
 
-        <!-- Full-Page Search -->
-        <div id="full-page-search">
-          <span id="close-search">✕</span>
-          <form>
-            <h3>SEARCH</h3>
-            <div class="container-search">
-              <input type="text" placeholder="What are you looking for?" />
-              <button type="submit"><span id="search-icon">🔍</span></button>
+        <div class="mobile-menu-wrapper">
+          <div class="mobile-logo-section">
+            <img src="images/main_logo.svg" alt="Bangla CAT" />
+            <div class="d-flex align-items-center">
+              <button class="mobile-search-icon me-2">
+                <i class="bi bi-search text-white"></i>
+              </button>
+              <button
+                class="mobile-menu-toggler"
+                type="button"
+                id="mobileMenuClose"
+              >
+                <i class="bi bi-x-lg mobile-menu-icon text-white"></i>
+              </button>
             </div>
-          </form>
+          </div>
+
+          <div id="mobileMainMenu">
+            <ul class="mobile-navbar-nav">
+              <li class="mobile-nav-item">
+                <a
+                  class="mobile-nav-link mobile-menu-item"
+                  href="#mobileProducts"
+                  data-bs-toggle="collapse"
+                >
+                  PRODUCTS
+                  <i class="bi bi-chevron-down mobile-expand-icon"></i>
+                </a>
+                <div class="collapse mobile-collapse" id="mobileProducts">
+                  <ul class="mobile-sub-menu">
+                    <li>
+                      <a
+                        class="mobile-nav-link"
+                        href="#mobilePowerSolutions"
+                        data-bs-toggle="collapse"
+                      >
+                        Power Solutions
+                        <i class="bi bi-chevron-down mobile-expand-icon"></i>
+                      </a>
+                      <div
+                        class="collapse mobile-collapse"
+                        id="mobilePowerSolutions"
+                      >
+                        <ul
+                          class="mobile-sub-menu mobile-power-solutions-submenu"
+                        >
+                          <li><a class="mobile-nav-link" href="#">GAS</a></li>
+                          <li>
+                            <a class="mobile-nav-link" href="#">Diesel</a>
+                          </li>
+                          <li>
+                            <a class="mobile-nav-link" href="#">Dual Fuel</a>
+                          </li>
+                          <li>
+                            <a class="mobile-nav-link" href="#">Microgrid</a>
+                          </li>
+                          <li>
+                            <a class="mobile-nav-link" href="#">Compressor</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li>
+                      <a
+                        class="mobile-nav-link"
+                        href="#epcPowerSolutions"
+                        data-bs-toggle="collapse"
+                      >
+                        EPC
+                        <i class="bi bi-chevron-down mobile-expand-icon"></i>
+                      </a>
+                      <div
+                        class="collapse mobile-collapse"
+                        id="epcPowerSolutions"
+                      >
+                        <ul
+                          class="mobile-sub-menu mobile-power-solutions-submenu"
+                        >
+                          <li><a class="mobile-nav-link" href="#">Epc1</a></li>
+                          <li>
+                            <a class="mobile-nav-link" href="#">Epc2</a>
+                          </li>
+                          <li>
+                            <a class="mobile-nav-link" href="#">Epc3</a>
+                          </li>
+                          <li>
+                            <a class="mobile-nav-link" href="#">Epc4</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+
+                    <li>
+                      <a
+                        class="mobile-nav-link"
+                        href="#marineSolutions"
+                        data-bs-toggle="collapse"
+                      >
+                        Marine Solutions
+                        <i class="bi bi-chevron-down mobile-expand-icon"></i>
+                      </a>
+                      <div
+                        class="collapse mobile-collapse"
+                        id="marineSolutions"
+                      >
+                        <ul
+                          class="mobile-sub-menu mobile-power-solutions-submenu"
+                        >
+                          <li>
+                            <a class="mobile-nav-link" href="#"
+                              >MarineSolutions1</a
+                            >
+                          </li>
+                          <li>
+                            <a class="mobile-nav-link" href="#"
+                              >MarineSolutions2</a
+                            >
+                          </li>
+                          <li>
+                            <a class="mobile-nav-link" href="#"
+                              >MarineSolutions3</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+
+                    <li>
+                      <a
+                        class="mobile-nav-link"
+                        href="#heavyMachineryEquipment"
+                        data-bs-toggle="collapse"
+                      >
+                        Heavy Machinery & Equipment New & Used
+                        <i class="bi bi-chevron-down mobile-expand-icon"></i>
+                      </a>
+                      <div
+                        class="collapse mobile-collapse"
+                        id="heavyMachineryEquipment"
+                      >
+                        <ul
+                          class="mobile-sub-menu mobile-power-solutions-submenu"
+                        >
+                          <li>
+                            <a class="mobile-nav-link" href="#">
+                              Heavy Machinery1</a
+                            >
+                          </li>
+                          <li>
+                            <a class="mobile-nav-link" href="#"
+                              >Heavy Machinery2</a
+                            >
+                          </li>
+                          <li>
+                            <a class="mobile-nav-link" href="#"
+                              >Heavy Machinery3</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+
+                    <li>
+                      <a
+                        class="mobile-nav-link"
+                        href="#materialHandlingApplications"
+                        data-bs-toggle="collapse"
+                      >
+                        Material Handling Applications
+                        <i class="bi bi-chevron-down mobile-expand-icon"></i>
+                      </a>
+                      <div
+                        class="collapse mobile-collapse"
+                        id="materialHandlingApplications"
+                      >
+                        <ul
+                          class="mobile-sub-menu mobile-power-solutions-submenu"
+                        >
+                          <li>
+                            <a class="mobile-nav-link" href="#">Material1</a>
+                          </li>
+                          <li>
+                            <a class="mobile-nav-link" href="#">Material2</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+
+                    <li>
+                      <a
+                        class="mobile-nav-link"
+                        href="#rentalSolutions"
+                        data-bs-toggle="collapse"
+                      >
+                        Rental Solutions
+                        <i class="bi bi-chevron-down mobile-expand-icon"></i>
+                      </a>
+                      <div
+                        class="collapse mobile-collapse"
+                        id="rentalSolutions"
+                      >
+                        <ul
+                          class="mobile-sub-menu mobile-power-solutions-submenu"
+                        >
+                          <li>
+                            <a class="mobile-nav-link" href="#"
+                              >Rental Solutions1</a
+                            >
+                          </li>
+                          <li>
+                            <a class="mobile-nav-link" href="#"
+                              >Rental Solutions2</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mobile-nav-item">
+                <a class="mobile-nav-link mobile-menu-item" href="#"
+                  >SERVICES</a
+                >
+              </li>
+              <li class="mobile-nav-item">
+                <a class="mobile-nav-link mobile-menu-item" href="#">PARTS</a>
+              </li>
+              <li class="mobile-nav-item">
+                <a class="mobile-nav-link mobile-menu-item" href="#"
+                  >TECHNOLOGY</a
+                >
+              </li>
+              <li class="mobile-nav-item">
+                <a class="mobile-nav-link mobile-menu-item" href="#"
+                  >GET QUOTE</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
 
         <!-- mobile nav end -->
