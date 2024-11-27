@@ -1,23 +1,11 @@
 /* ================ Global CSS Start ================== */
 @font-face {
-  font-family: "UniversCondensed";
-  src: url("../fonts/universcondensed_medium.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+  font-family: UniversCondensed;
+  src: url("../fonts/Univers-Condensed-Medium.ttf");
 }
-
 @font-face {
-  font-family: "UniversCondensed";
-  src: url("../fonts/universcondensed_bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "UniversCondensed";
-  src: url("../fonts/universcondensed_mediumitalic.ttf") format("truetype");
-  font-weight: normal;
-  font-style: italic;
+  font-family: UniversCondensedBold;
+  src: url("../fonts/univers-condensed-bold.ttf");
 }
 
 * {
@@ -177,6 +165,27 @@ label {
 }
 
 /* ================ Buttons ================== */
+.hero-btn {
+  background: transparent;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  color: #fff !important;
+  background-size: 200% 100%;
+  font-size: 16px;
+  text-align: center;
+
+  font-weight: bold;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  padding: 10px 20px;
+  display: inline-block;
+  transition: all 0.5s ease-out;
+  background: linear-gradient(to right, #fab600 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+}
+
 .border-button,
 .back-to-top-btn {
   font-size: 16px;
@@ -187,7 +196,7 @@ label {
   text-transform: uppercase;
   color: #000000;
   border: 1px solid #000;
-  padding: 14px 24px;
+  padding: 10px 20px;
   display: inline-block;
   transition: all 0.5s ease-out;
   background: linear-gradient(to right, #fab600 50%, white 50%);
@@ -195,14 +204,16 @@ label {
   background-position: right bottom;
 }
 
-.border-button:hover {
+.border-button:hover,
+.hero-btn:hover {
   background-position: left bottom;
   color: white;
   cursor: pointer;
+  border: 1px solid #c8c7c7 !important;
 }
 
 .back-to-top-btn:hover {
-  background-position: left bottom;
+  background-position: left bottom !important;
   color: white;
   cursor: pointer;
 }
@@ -221,6 +232,14 @@ label {
 
 /* ================ Header Styling ================ */
 /* ================ Nav popup container start ================ */
+.desktop-nav {
+  width: 100%;
+  position: fixed;
+  background: #000000 0% 0% no-repeat padding-box !important;
+  opacity: 0.8 !important;
+  z-index: 99;
+  padding: 10px 0;
+}
 
 .nav-item .nav-link {
   color: white;
@@ -617,11 +636,22 @@ mobile-menu-open {
   top: 50%;
   transform: translateY(-50%);
   text-align: start;
-  max-width: 600px;
+  width: 580px;
   height: fit-content;
+}
+.slider-content h5 {
+  color: #fab600;
+  font-size: 18px;
 }
 .slider-content h2 {
   text-transform: capitalize;
+  font-size: 46px;
+  line-height: 46px;
+}
+.slider-content p {
+  font-size: 24px;
+  color: #fff;
+  opacity: 0.9;
 }
 .carousel-indicators {
   gap: 6px;
@@ -645,9 +675,12 @@ mobile-menu-open {
 }
 
 .key-business-section .business-card-wrap {
+  gap: 50px;
 }
 
 .key-business-section .business-card-wrap .business-card {
+  width: 240px;
+  height: auto;
 }
 .key-business-section .business-card-wrap .business-card img {
   width: 100%;
@@ -656,7 +689,7 @@ mobile-menu-open {
 }
 /* ================ Products ================== */
 .section-title {
-  font-size: 42px;
+  font-size: 36px;
   text-transform: uppercase;
   font-weight: 800;
 }
@@ -683,14 +716,14 @@ mobile-menu-open {
 .product-warper .product .product-info .title {
   text-align: left;
   font-size: 36px;
-  font-weight: bold;
+  font-weight: 800;
   color: #000000;
   text-transform: uppercase;
 }
 
 .product-warper .product .product-info .desc {
   text-align: left;
-  font-size: 18px;
+  font-size: 24px;
   color: #000000;
 }
 
@@ -735,9 +768,15 @@ mobile-menu-open {
 }
 
 .card-subtitle {
-  font-size: 16px;
+  font-size: 24px;
   color: #666;
   margin-bottom: 12px;
+  font-weight: 400;
+  margin-bottom: 0px !important;
+}
+.card-text {
+  font-size: 20px;
+  color: #000000;
 }
 
 .swiper {
@@ -807,12 +846,19 @@ mobile-menu-open {
   grid-template-columns: repeat(5, 1fr);
   gap: 30px;
 }
-
+.footer .footer-middle h5 {
+  font-size: 24px;
+  font-weight: 700;
+}
 .footer .footer-middle .footer-links {
   margin-top: 16px;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  font-size: 20px;
+}
+.footer .footer-middle .footer-links a {
+  font-size: 20px;
 }
 
 .footer .footer-bottom {
@@ -878,10 +924,14 @@ mobile-menu-open {
 }
 
 /* Main icon style */
+.image-24-7 {
+  width: 70px !important;
+  height: 70px !important;
+}
 .image-24-7 img {
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  width: 100%;
+  height: 100%;
   border: 2px solid #fab600;
   background-color: #fcf0b9;
   transition: transform 0.3s ease-in-out;
@@ -894,51 +944,30 @@ mobile-menu-open {
 /*================ mobile support center  */
 .main-circle {
   width: 60px;
-
   height: 60px;
-
   background-color: #fcdb45;
-
   border-radius: 50%;
-
   display: flex;
-
   align-items: center;
-
   justify-content: center;
-
   color: white;
-
   cursor: pointer;
-
   font-weight: bold;
-
   position: relative;
-
   z-index: 2;
 }
 
 .circle {
   width: 40px;
-
   height: 40px;
-
   background-color: #fab600;
-
   border-radius: 50%;
-
   position: absolute;
-
   display: flex;
-
   align-items: center;
-
   justify-content: center;
-
   color: white;
-
   opacity: 0;
-
   transition: all 0.3s ease;
 }
 
