@@ -173,11 +173,10 @@ label {
   background-size: 201% 100%;
   font-size: 16px;
   text-align: center;
-
+  font-family: "UniversCondensedBold", sans-serif;
   font-weight: bold;
   line-height: 16px;
   text-transform: uppercase;
-
   padding: 10px 20px;
   display: inline-block;
   transition: all 0.5s ease-out;
@@ -190,11 +189,11 @@ label {
 .back-to-top-btn {
   font-size: 16px;
   text-align: center;
-  font-family: "UniversCondensed", sans-serif;
+  font-family: "UniversCondensedBold", sans-serif;
   font-weight: bold;
   line-height: 16px;
   text-transform: uppercase;
-  color: #000000;
+  color: #000000 !important;
   border: 1px solid #000;
   padding: 10px 20px;
   display: inline-block;
@@ -207,7 +206,7 @@ label {
 .border-button:hover,
 .hero-btn:hover {
   background-position: left bottom;
-  color: white;
+  color: #000 !important;
   cursor: pointer;
   border: 1px solid #c8c7c7 !important;
 }
@@ -227,7 +226,7 @@ label {
 
 .back-to-top-btn:hover .bi-caret-up-fill {
   transform: translateY(0);
-  color: #fff;
+  color: #000;
 }
 
 /* ================ Header Styling ================ */
@@ -877,12 +876,13 @@ mobile-menu-open {
   position: fixed;
   bottom: 40px;
   right: 50px;
+  z-index: 1000;
 }
 
 .support-icon {
   position: relative;
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
 }
 
 .contact-icon {
@@ -890,16 +890,15 @@ mobile-menu-open {
   flex-direction: column;
   align-items: center;
   position: absolute;
-  bottom: 60px;
+  bottom: 70px;
   left: 50%;
   transform: translateX(-50%);
   visibility: hidden;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-.support-icon:hover .contact-icon,
-.contact-icon:hover {
+.support-icon:hover .contact-icon {
   visibility: visible;
   opacity: 1;
 }
@@ -916,25 +915,76 @@ mobile-menu-open {
   border-radius: 50%;
   font-size: 24px;
   margin-bottom: 15px;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+/* Hover Animations - Rise Up */
+.support-icon:hover .contact-icon a:nth-child(1) {
+  animation: rise-up 0.4s forwards cubic-bezier(0.25, 0.1, 0.25, 1) 0.1s;
+}
+
+.support-icon:hover .contact-icon a:nth-child(2) {
+  animation: rise-up 0.4s forwards cubic-bezier(0.25, 0.1, 0.25, 1) 0.2s;
+}
+
+.support-icon:hover .contact-icon a:nth-child(3) {
+  animation: rise-up 0.4s forwards cubic-bezier(0.25, 0.1, 0.25, 1) 0.3s;
+}
+
+/* Hide Animations - Sink Down */
+.support-icon:not(:hover) .contact-icon a:nth-child(1) {
+  animation: sink-down 0.4s forwards cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
+}
+
+.support-icon:not(:hover) .contact-icon a:nth-child(2) {
+  animation: sink-down 0.4s forwards cubic-bezier(0.25, 0.1, 0.25, 1) 0.1s;
+}
+
+.support-icon:not(:hover) .contact-icon a:nth-child(3) {
+  animation: sink-down 0.4s forwards cubic-bezier(0.25, 0.1, 0.25, 1) 0.2s;
+}
+
+@keyframes rise-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes sink-down {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+    visibility: hidden;
+  }
 }
 
 .contact-icon a:hover {
   transform: scale(1.1);
 }
 
-/* Main icon style */
 .image-24-7 {
-  width: 70px !important;
-  height: 70px !important;
+  width: 80px;
+  height: 80px;
 }
+
 .image-24-7 img {
   border-radius: 50%;
   width: 100%;
   height: 100%;
   border: 2px solid #fab600;
   background-color: #fcf0b9;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
 .image-24-7:hover img {
