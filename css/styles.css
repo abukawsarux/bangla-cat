@@ -170,7 +170,7 @@ label {
   border: 1px solid #fff;
   padding: 10px 20px;
   color: #fff !important;
-  background-size: 200% 100%;
+  background-size: 201% 100%;
   font-size: 16px;
   text-align: center;
 
@@ -182,7 +182,7 @@ label {
   display: inline-block;
   transition: all 0.5s ease-out;
   background: linear-gradient(to right, #fab600 50%, transparent 50%);
-  background-size: 200% 100%;
+  background-size: 201% 100%;
   background-position: right bottom;
 }
 
@@ -200,7 +200,7 @@ label {
   display: inline-block;
   transition: all 0.5s ease-out;
   background: linear-gradient(to right, #fab600 50%, white 50%);
-  background-size: 200% 100%;
+  background-size: 201% 100%;
   background-position: right bottom;
 }
 
@@ -261,7 +261,7 @@ label {
   display: none;
   background: #2d2d2df2;
   position: fixed; /* Change to fixed for full width */
-  top: 90px;
+  top: 110px;
   border-top: 4px solid #fab600;
   left: 0;
   right: 0; /* Ensure full width */
