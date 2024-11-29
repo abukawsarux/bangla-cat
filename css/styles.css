@@ -258,7 +258,8 @@ label {
 /* Full width mega menu styling */
 .nav-popup-container {
   display: none;
-  background: #2d2d2df2;
+  background: #000000 0% 0% no-repeat padding-box !important;
+  opacity: 0.9 !important;
   position: fixed; /* Change to fixed for full width */
   top: 110px;
   border-top: 4px solid #fab600;
@@ -274,7 +275,7 @@ label {
 .nav-popup-grid {
   max-width: 1200px; /* Match your main container width */
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 0;
 }
 
 /* Create hover bridge */
@@ -299,6 +300,7 @@ label {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.2s ease, visibility 0.2s ease;
+  padding-bottom: 50px;
 }
 
 .nav-item:hover .nav-popup-container,
@@ -316,7 +318,7 @@ label {
     1200px
   ); /* Use CSS variable if you have one */
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 0;
 }
 
 .nav-popup-container > h4 {
@@ -367,7 +369,14 @@ label {
 .main-nav a:hover {
   color: #fab600;
 }
-
+.nested {
+  transition: 0.4s;
+  font-size: 22px;
+}
+.nested:hover {
+  color: #fab600;
+  transition: 0.4s;
+}
 .sub-nav {
   display: none;
   position: absolute;
