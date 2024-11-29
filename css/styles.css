@@ -350,7 +350,6 @@ label {
 
 .main-nav > li:last-child,
 .sub-nav > li:last-child {
-  border-bottom: 1px solid #707070;
 }
 
 .main-nav a {
@@ -377,13 +376,23 @@ label {
   color: #fab600;
   transition: 0.4s;
 }
+
 .sub-nav {
   display: none;
   position: absolute;
   top: 0;
   left: 100%;
+  width: 100%;
   z-index: 10;
   visibility: visible;
+
+  /* padding: 10px 20px; */
+}
+.sub-nav li a {
+  font-size: 22px;
+}
+.desktop-sub-nav-container:hover > .sub-nav {
+  display: block;
 }
 
 .sub-nav li {
