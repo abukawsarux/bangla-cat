@@ -30,125 +30,18 @@
     <!-- Custom styles -->
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/responsive.css" />
-    <style>
-      .navbar.mobile-navbar {
-      }
-      ul.menu-wrap {
-        list-style-type: none;
-        padding-left: 0;
-        width: 100%;
-      }
-
-      ul li {
-        border-top: 1px dotted rgba(0, 0, 0, 0.1);
-        position: relative;
-        width: 100%;
-        user-select: none;
-        -webkit-user-select: none;
-      }
-
-      ul li a {
-        color: rgba(0, 0, 0, 0.7);
-        padding: 7px 0;
-        display: inline-block;
-        width: calc(100% - 50px);
-        text-decoration: none;
-      }
-
-      ul li a:hover {
-        text-decoration: none;
-        border-bottom: 0;
-      }
-
-      ul li.selected a {
-        color: #004c84;
-        font-weight: bold;
-        display: block;
-        margin-right: 50px;
-        width: 100%;
-      }
-
-      ul li a.menu-toggle {
-        position: relative;
-        width: 50px;
-        text-align: center;
-        border-bottom: 0;
-        vertical-align: top;
-        cursor: pointer;
-      }
-
-      ul li a.menu-toggle:focus,
-      ul li a.menu-toggle:hover,
-      ul li a.menu-toggle:visited,
-      ul li a.menu-toggle:link {
-        border-bottom: 0;
-        text-decoration: none;
-      }
-
-      ul li a.menu-toggle.rotate {
-        transform: rotate(180deg);
-      }
-
-      ul.sub-menu {
-        display: none;
-        font-size: 14px;
-        padding-left: 20px;
-      }
-
-      ul.sub-menu li {
-        padding-left: 20px;
-      }
-    </style>
+    <style></style>
   </head>
   <body>
     <!-- Navbar -->
-
-    <!-- Navbar -->
-    <div class="navbar mobile-navbar d-lg-none">
-      <div class="container">
-        <ul class="menu-wrap">
-          <li class="selected"><a href="#">Classic Checking</a></li>
-          <li><a href="#">Interest Checking</a></li>
-          <li><a href="#">Debit Card</a></li>
-          <li><a href="#">Direct Deposit</a></li>
-          <li>
-            <a href="#">Digital Experience</a
-            ><a class="menu-toggle" href="#"
-              ><i class="bi bi-chevron-down"></i
-            ></a>
-            <ul class="sub-menu">
-              <li>
-                <a href="#">Link 1</a
-                ><a href="#" class="menu-toggle"
-                  ><i class="bi bi-chevron-down"></i
-                ></a>
-                <ul class="sub-menu">
-                  <li>
-                    <a href="#">Sub link 1</a>
-                    <ul class="sub-menu">
-                      <li><a href="#">Sub-sub link 1</a></li>
-                      <li><a href="#">Sub-sub link 2</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">Sub link 2</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Link 2</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Managing Your Checking Account</a
-            ><a class="menu-toggle" href="#"
-              ><i class="bi bi-chevron-down"></i
-            ></a>
-            <ul class="sub-menu">
-              <li><a href="#">link 1</a></li>
-              <li><a href="#">link 2</a></li>
-            </ul>
-          </li>
-        </ul>
+    <div class="container" style="background-color: black">
+      <div class="row">
+        <div class="col-12">
+          <div class="container my-5"></div>
+        </div>
       </div>
     </div>
+    <!-- Navbar -->
 
     <!-- Navbar -->
 
@@ -167,33 +60,6 @@
     </script>
     <!-- Custom JS -->
     <script src="js/script.js"></script>
-    <script>
-      accordionNav = $(function () {
-        $(".menu-toggle").click(function (e) {
-          e.preventDefault();
-          var toggleButton = $(this);
-          if (toggleButton.next().hasClass("active")) {
-            toggleButton.next().removeClass("active");
-            toggleButton.next().slideUp(400);
-            toggleButton.removeClass("rotate");
-          } else {
-            toggleButton
-              .parent()
-              .parent()
-              .find("li .sub-menu")
-              .removeClass("active");
-            toggleButton.parent().parent().find("li .sub-menu").slideUp(400);
-            toggleButton
-              .parent()
-              .parent()
-              .find(".menu-toggle")
-              .removeClass("rotate");
-            toggleButton.next().toggleClass("active");
-            toggleButton.next().slideToggle(400);
-            toggleButton.toggleClass("rotate");
-          }
-        });
-      });
-    </script>
+    <script></script>
   </body>
 </html>
