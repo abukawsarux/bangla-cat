@@ -119,4 +119,7 @@
   .footer .footer-middle {
     grid-template-columns: repeat(1, 1fr);
   }
+  .key-business-section .business-card-wrap {
+    gap: 15px;
+  }
 }
