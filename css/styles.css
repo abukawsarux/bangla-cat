@@ -234,20 +234,23 @@ label {
 .desktop-nav {
   width: 100%;
   position: fixed;
-  background: #000000 0% 0% no-repeat padding-box !important;
-  opacity: 0.8 !important;
+  background: rgba(0, 0, 0, 0.8); /* Apply opacity to background only */
   z-index: 99;
   padding: 10px 0;
+  transition: background 0.3s ease; /* Add transition for smooth animation */
 }
 
 .nav-item .nav-link {
   color: white;
 }
+
 .nav-item .nav-link:hover {
   color: #fab600;
 }
+
 .nav-item {
   position: relative;
+  transition: opacity 2s ease-in-out, transform 2s ease-in-out; /* Smooth transition for hover animation */
 }
 
 /* Make the navbar relative for dropdown positioning reference */
@@ -256,16 +259,19 @@ label {
 }
 
 /* Full width mega menu styling */
+.desktop-nav .nav-popup-container {
+  background: #000000; /* Fully black color */
+}
+
 .nav-popup-container {
   display: none;
-  background: #000000 0% 0% no-repeat padding-box !important;
-  opacity: 0.9 !important;
+  background: #000000; /* Fully black color */
   position: fixed; /* Change to fixed for full width */
   top: 110px;
   border-top: 4px solid #fab600;
   left: 0;
   right: 0; /* Ensure full width */
-  width: 100vw; /* Changed from 100vw to 100% */
+  width: 100%; /* Corrected width to 100% */
   z-index: 9999;
   padding-top: 20px;
   margin-top: -20px;
@@ -293,6 +299,7 @@ label {
 .nav-item:hover .nav-popup-container,
 .nav-popup-container:hover {
   display: block;
+  transition: opacity 2s ease-in-out, transform 2s ease-in-out; /* Smooth transition for hover animation */
 }
 
 /* Smooth transition */
@@ -714,16 +721,17 @@ mobile-menu-open {
   opacity: 0.9;
 }
 .carousel-indicators {
-  gap: 6px;
+  gap: 16px;
 }
 .carousel-indicators .slider-dot {
-  width: 12px;
-  height: 12px;
+  width: 8px;
+  height: 8px;
   border-radius: 100%;
   border: 1px solid #fff;
   background-color: transparent !important;
   opacity: 1;
 }
+
 .carousel-indicators .slider-dot.active {
   background-color: #ffffff !important;
 }

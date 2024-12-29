@@ -57,3 +57,15 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // ---------mobile nav------
+
+/* Add onscroll animation */
+window.addEventListener("scroll", function () {
+  const navbar = document.querySelector(".desktop-nav");
+  if (window.scrollY > 120) {
+    navbar.style.background =
+      "rgba(0, 0, 0, 1)"; /* Fill black with opacity 1 */
+  } else {
+    navbar.style.background =
+      "rgba(0, 0, 0, 0.8)"; /* Restore original background */
+  }
+});
