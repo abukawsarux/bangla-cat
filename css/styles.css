@@ -264,7 +264,7 @@ label {
 }
 
 .nav-popup-container {
-  display: none;
+
   background: #000000; /* Fully black color */
   position: fixed; /* Change to fixed for full width */
   top: 110px;
@@ -295,28 +295,41 @@ label {
   background: transparent;
 }
 
-/* Show dropdown on hover */
-.nav-item:hover .nav-popup-container,
-.nav-popup-container:hover {
-  display: block;
-  transition: opacity 2s ease-in-out, transform 2s ease-in-out; /* Smooth transition for hover animation */
-}
 
 /* Smooth transition */
 .nav-popup-container {
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.2s ease, visibility 0.2s ease;
   padding-bottom: 50px;
+  /* Quick transition for appearing */
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  /* Prevent flickering during transition */
+
 }
+
+/* Show dropdown on hover */
 
 .nav-item:hover .nav-popup-container,
 .nav-popup-container:hover {
   opacity: 1;
   visibility: visible;
-  display: block;
+  /* Add delay when mouse leaves */
+  transition-delay: 0s, 0s;
+  /* Enable interaction when visible */
+
 }
 
+/* When mouse leaves, delay the fade out */
+.nav-popup-container {
+  /* Longer delay when hiding */
+  transition-delay: 0.5s, 0.5s;
+}
+
+/* Optional: Add transition delay for child elements */
+.nav-popup-container > * {
+  transition: opacity 0.2s ease-in-out;
+  transition-delay: 0.1s;
+}
 /* Ensure container aligns with navbar container */
 .nav-popup-grid {
   width: 100%;
@@ -370,7 +383,6 @@ label {
   border-top: 1px solid #707070;
   transition: background-color 0.3s;
 }
-
 .main-nav li:hover > a,
 .main-nav a:hover {
   color: #fab600;
