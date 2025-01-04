@@ -260,11 +260,10 @@ label {
 
 /* Full width mega menu styling */
 .desktop-nav .nav-popup-container {
-  background: #000000; /* Fully black color */
+  background: #2d2d2d; /* Fully black color */
 }
 
 .nav-popup-container {
-
   background: #000000; /* Fully black color */
   position: fixed; /* Change to fixed for full width */
   top: 110px;
@@ -295,7 +294,6 @@ label {
   background: transparent;
 }
 
-
 /* Smooth transition */
 .nav-popup-container {
   opacity: 0;
@@ -304,7 +302,6 @@ label {
   /* Quick transition for appearing */
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
   /* Prevent flickering during transition */
-
 }
 
 /* Show dropdown on hover */
@@ -316,7 +313,6 @@ label {
   /* Add delay when mouse leaves */
   transition-delay: 0s, 0s;
   /* Enable interaction when visible */
-
 }
 
 /* When mouse leaves, delay the fade out */
