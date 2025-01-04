@@ -472,7 +472,7 @@ label {
   width: 0;
   opacity: 0;
   padding: 0;
-  margin-left: -40px;
+  margin-right: 42px;
   border: 1px solid #ddd;
   transition: all 0.3s ease;
   overflow: hidden;
@@ -483,10 +483,28 @@ label {
 .search-container:hover .search-input {
   width: 600px;
   opacity: 1;
-  padding: 5px 10px;
+  padding: 5px 15px;
   margin-left: 10px;
 }
-
+.search-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 10px;
+  background: transparent;
+  color: white;
+  z-index: 50;
+  transition: all 0.3s ease;
+}
+.search-container:hover .search-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 10px;
+  background: #fab600;
+  color: black;
+  z-index: 50;
+}
 /* ================ Nav popup container end ================ */
 
 /* mobile nav start */
