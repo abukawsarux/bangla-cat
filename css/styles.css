@@ -243,7 +243,9 @@ label {
 .nav-item .nav-link {
   color: white;
 }
-
+.nav-item .active-item{
+  color: #fab600;
+}
 .nav-item .nav-link:hover {
   color: #fab600;
 }
