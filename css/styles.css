@@ -1169,3 +1169,61 @@ mobile-menu-open {
 
 /* support center  */
 /* ================ End of CSS ================== */
+
+/* ============= Contact Page ============ */
+/* Container styling */
+
+/* Title styling */
+.quote-title {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #333;
+  margin-bottom: 20px;
+  padding-left: 15px;
+  border-left: 2px solid #000000;
+}
+
+/* Label styling */
+.quote-label {
+  font-size: 20px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Input field styling */
+.quote-input,
+.quote-textarea {
+  font-size: 14px;
+  padding: 12px 15px;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  transition: border-color 0.3s;
+}
+
+.quote-input:focus,
+.quote-textarea:focus {
+  border-color: #f5f5f5;
+  background-color: #f5f5f5;
+  outline: none;
+  box-shadow: none;
+}
+
+/* Submit button styling */
+.quote-submit {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.quote-submit:hover {
+  background-color: #444;
+}
