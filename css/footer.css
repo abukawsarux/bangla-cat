@@ -1,0 +1,325 @@
+/* ================ Footer ================== */
+.footer {
+  background-color: #dee0e1;
+  padding-top: 0;
+  padding-bottom: 30px;
+  margin-top: 80px;
+  border: 1px solid #707070;
+}
+
+.footer .social-media {
+  padding: 15px 20px;
+  background-color: #fab600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  border-radius: 0 0 15px 15px;
+}
+
+.footer .social-icon img {
+  width: 28px;
+  height: auto;
+}
+
+.footer .customer-care {
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid #ffffff;
+  text-align: end;
+  padding: 10px 0;
+}
+
+.footer .customer-care a {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+}
+
+.footer .footer-middle {
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+}
+.footer .footer-middle h5 {
+  font-size: 24px;
+  font-weight: 700;
+}
+.footer .footer-middle .footer-links {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 20px;
+}
+.footer .footer-middle .footer-links a {
+  font-size: 20px;
+}
+
+.footer .footer-bottom {
+  justify-content: space-between;
+}
+/* Footer Mobile */
+.border-bottom {
+  border-bottom: 1px solid #000 !important;
+}
+.rotate-180 {
+  transform: rotate(180deg);
+  transition: transform 0.5s ease-in-out;
+}
+/* Support */
+.support-wrap {
+  position: fixed;
+  bottom: 40px;
+  right: 50px;
+  z-index: 1000;
+}
+
+.support-icon {
+  position: relative;
+  width: 70px;
+  height: 70px;
+}
+
+.contact-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.support-icon:hover .contact-icon {
+  visibility: visible;
+  opacity: 1;
+}
+
+.contact-icon a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  background-color: #fff;
+  border: 2px solid #fab600;
+  border-radius: 50%;
+  font-size: 24px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+/* Hover Animations - Rise Up */
+.support-icon:hover .contact-icon a:nth-child(1) {
+  animation: rise-up 0.4s forwards cubic-bezier(0.25, 0.1, 0.25, 1) 0.1s;
+}
+
+.support-icon:hover .contact-icon a:nth-child(2) {
+  animation: rise-up 0.4s forwards cubic-bezier(0.25, 0.1, 0.25, 1) 0.2s;
+}
+
+.support-icon:hover .contact-icon a:nth-child(3) {
+  animation: rise-up 0.4s forwards cubic-bezier(0.25, 0.1, 0.25, 1) 0.3s;
+}
+@keyframes rise-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.support-icon:not(:hover) .contact-icon a:nth-child(1) {
+  animation: sink-down 2s backwards cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.support-icon:not(:hover) .contact-icon a:nth-child(2) {
+  animation: sink-down 3s backwards cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.support-icon:not(:hover) .contact-icon a:nth-child(3) {
+  animation: sink-down 4s backwards cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+@keyframes sink-down {
+  0% {
+    transform: translateY(0); /* Current position */
+    opacity: 1; /* Fully visible */
+  }
+
+  100% {
+    transform: translateY(400px); /* Move down smoothly */
+  }
+}
+
+.contact-icon a:hover {
+  transform: scale(1.1);
+}
+
+.image-24-7 {
+  width: 80px;
+  height: 80px;
+}
+
+.image-24-7 img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #fab600;
+  background-color: #fcf0b9;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.image-24-7:hover img {
+  transform: scale(1.1);
+  background-color: #f6d479;
+}
+/*================ mobile support center  */
+.main-circle {
+  width: 60px;
+  height: 60px;
+  background-color: #fcdb45;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  position: relative;
+  z-index: 2;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  background-color: #fab600;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+/* Initial positions - much tighter vertical spacing */
+
+.circle:nth-child(1) {
+  transform: translate(-45px, -15px) scale(0);
+}
+
+.circle:nth-child(2) {
+  transform: translate(-50px, 0) scale(0);
+}
+
+.circle:nth-child(3) {
+  transform: translate(-45px, 15px) scale(0);
+}
+
+/* Hover effect */
+.menu-wrapper {
+  position: fixed;
+  bottom: 40px;
+  right: 50px;
+}
+
+.menu-wrapper:hover .circle {
+  opacity: 1;
+}
+
+.menu-wrapper:hover .circle:nth-child(1) {
+  transform: translate(-45px, -50px) scale(1);
+
+  transition-delay: 0.1s;
+}
+
+.menu-wrapper:hover .circle:nth-child(2) {
+  transform: translate(-70px, 0) scale(1);
+
+  transition-delay: 0.2s;
+}
+
+.menu-wrapper:hover .circle:nth-child(3) {
+  transform: translate(-45px, 50px) scale(1);
+
+  transition-delay: 0.3s;
+}
+
+/* Make circles slightly overlap */
+
+.circle:nth-child(1),
+.circle:nth-child(2),
+.circle:nth-child(3) {
+  margin-top: -5px; /* Creates slight overlap */
+}
+
+/* support center  */
+/* ================ End of CSS ================== */
+
+/* ============= Contact Page ============ */
+/* Container styling */
+
+/* Title styling */
+.quote-title {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #333;
+  margin-bottom: 20px;
+  padding-left: 15px;
+  border-left: 2px solid #000000;
+}
+
+/* Label styling */
+.quote-label {
+  font-size: 20px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Input field styling */
+.quote-input,
+.quote-textarea {
+  font-size: 14px;
+  padding: 12px 15px;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  transition: border-color 0.3s;
+}
+
+.quote-input:focus,
+.quote-textarea:focus {
+  border-color: #f5f5f5;
+  background-color: #f5f5f5;
+  outline: none;
+  box-shadow: none;
+}
+
+/* Submit button styling */
+.quote-submit {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.quote-submit:hover {
+  background-color: #444;
+}
