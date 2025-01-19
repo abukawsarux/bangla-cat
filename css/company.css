@@ -2,3 +2,11 @@
   padding: 8px 0;
   background: #fab600;
 }
+
+ul.difference li,
+ul.values li {
+  list-style-type: disc;
+  padding: 0;
+  color: black;
+  margin-left: 15px;
+}
