@@ -69,3 +69,29 @@ window.addEventListener("scroll", function () {
       "rgba(0, 0, 0, 0.8)"; /* Restore original background */
   }
 });
+
+//toggleContent News Content Show More / Show Less
+function toggleContent() {
+  const content = document.getElementById("news-content");
+  const button = document.getElementById("toggle-btn");
+
+  if (content.classList.contains("collapsed")) {
+    content.style.height = content.scrollHeight + "px"; // Expand to full height
+    content.classList.remove("collapsed");
+    button.innerText = "Less";
+  } else {
+    content.style.height = "100px"; // Collapsed height
+    content.classList.add("collapsed");
+    button.innerText = "More";
+  }
+}
+
+// Add event listener for animation end to reset inline styles
+document
+  .getElementById("news-content")
+  .addEventListener("transitionend", () => {
+    const content = document.getElementById("news-content");
+    if (!content.classList.contains("collapsed")) {
+      content.style.height = "auto"; // Reset height to auto after animation
+    }
+  });

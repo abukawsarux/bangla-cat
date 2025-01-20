@@ -1,0 +1,9 @@
+.news-content {
+  height: 310px; /* Collapsed height */
+  overflow: hidden;
+  transition: height 0.5s ease; /* Smooth transition for height */
+}
+
+.news-content.collapsed {
+  height: 310px; /* Maintain the collapsed height */
+}
