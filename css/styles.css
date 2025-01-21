@@ -163,6 +163,42 @@ label {
   color: gray;
   font-size: 13px;
 }
+/* ================ cursor Styling ================== */
+
+.cursor-pointer {
+  cursor: pointer;
+}
+/* ================ primary card style for all pages ================== */
+
+.b-cat-card-container {
+  border: 1px solid #707070;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.b-cat-card-container > image {
+  height: 226px;
+}
+
+.b-cat-card-container > hr {
+  border-top: 1px solid #707070;
+}
+.b-cat-card-container .b-cat-card-container-title {
+  text-align: left;
+  letter-spacing: 0px;
+  color: #000000;
+
+  /* font-size: 26px; */
+
+  opacity: 1;
+}
+
+.card-img-top {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
 
 /* ================ Buttons ================== */
 .hero-btn {
@@ -231,63 +267,6 @@ label {
 
 /* ================ Header Styling ================ */
 
-/* ================ Hero Section ================ */
-.slider-content {
-  top: 50%;
-  transform: translateY(-50%);
-  text-align: start;
-  width: 580px;
-  height: fit-content;
-}
-.slider-content h5 {
-  color: #fab600;
-  font-size: 18px;
-}
-.slider-content h2 {
-  text-transform: capitalize;
-  font-size: 46px;
-  line-height: 46px;
-}
-.slider-content p {
-  font-size: 24px;
-  color: #fff;
-  opacity: 0.9;
-}
-.carousel-indicators {
-  gap: 16px;
-}
-.carousel-indicators .slider-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 100%;
-  border: 1px solid #fff;
-  background-color: transparent !important;
-  opacity: 1;
-}
-
-.carousel-indicators .slider-dot.active {
-  background-color: #ffffff !important;
-}
-
-/* ================ Key Business Supporting Elements Section ================ */
-.key-business-section {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-.key-business-section .business-card-wrap {
-  gap: 50px;
-}
-
-.key-business-section .business-card-wrap .business-card {
-  width: 240px;
-  height: auto;
-}
-.key-business-section .business-card-wrap .business-card img {
-  width: 100%;
-}
-.key-business-section .business-card-wrap .business-card img:hover {
-}
 /* ================ Products ================== */
 .section-title {
   font-size: 36px;
@@ -404,25 +383,42 @@ label {
   visibility: visible !important;
 }
 
-/* Breadcrumb */
-.breadcrumb-section {
+/* General Section Styling */
+.position-relative {
   position: relative;
-  width: 100%;
-  height: 300px; /* Adjust as needed */
-  background: url("/images/company/company-header-bg.png") no-repeat center
-    center/cover;
 }
 
-.breadcrumb-container {
+.position-absolute {
   position: absolute;
-  top: 80%;
-  left: 10%;
-  transform: translate(-50%, -50%);
-  text-align: center;
 }
 
-.breadcrumb-container h1 {
-  color: #fff;
-  font-size: 2.5rem; /* Adjust size as needed */
-  font-weight: bold;
+img.d-block.w-100 {
+  width: 100%;
+  height: auto;
 }
+
+/* Center Content Styling */
+
+.breadcrumb-container h3 {
+  font-size: 2rem;
+  color: #fff; /* White color for text contrast */
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.breadcrumb-container p {
+  font-size: 1.2rem;
+  color: #fff;
+  line-height: 1.5;
+}
+.breadcrumb-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  height: auto;
+}
+.breadcrumb-content {
+  margin-top: 50px;
+  width: 100%;
+}
+/* Breadcrumb Section Styling */

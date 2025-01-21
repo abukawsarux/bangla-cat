@@ -36,6 +36,12 @@
   #mobile-nav {
     display: flex;
   }
+  .breadcrumb-img {
+    height: 400px;
+  }
+  .breadcrumb-content {
+    margin-top: 40px;
+  }
 }
 
 /* Portrait phones and smaller */
@@ -121,5 +127,11 @@
   }
   .key-business-section .business-card-wrap {
     gap: 15px;
+  }
+  .breadcrumb-img {
+    height: 400px !important;
+  }
+  .breadcrumb-content {
+    margin-top: 40px;
   }
 }
