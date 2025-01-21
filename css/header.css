@@ -1,7 +1,7 @@
 /* ================ Nav popup container start ================ */
 .desktop-nav {
   width: 100%;
-  position: fixed;
+
   background: rgba(0, 0, 0, 0.8); /* Apply opacity to background only */
   z-index: 99;
   padding: 10px 0;
@@ -29,6 +29,7 @@
 /* Full width mega menu styling */
 .desktop-nav .nav-popup-container {
   background: #2d2d2d; /* Fully black color */
+  position: fixed;
 }
 
 .nav-popup-container {

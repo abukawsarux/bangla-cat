@@ -1,0 +1,9 @@
+/* ecp */
+.ecp-pro-img {
+  position: relative;
+  top: -150px;
+}
+.ecp-pro-img img {
+  width: 80%;
+  height: auto;
+}

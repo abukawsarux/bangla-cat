@@ -1,0 +1,6 @@
+.features-include li {
+  list-style-type: disc;
+  padding: 0;
+  color: black;
+  margin-left: 15px;
+}
