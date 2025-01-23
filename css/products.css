@@ -1,9 +1,16 @@
 /* ecp */
-.ecp-pro-img {
-  position: relative;
-  top: -150px;
+.single-pro-content {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
 }
-.ecp-pro-img img {
+.single-pro-img {
+}
+.single-pro-img img {
   width: 80%;
   height: auto;
+}
+.microgrid li {
+  list-style-type: disc; /* Ensure the list uses a disc as the bullet */
+  margin-left: 16px; /* Remove default margin for cleaner alignment */
 }
