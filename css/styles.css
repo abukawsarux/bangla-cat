@@ -126,6 +126,19 @@ h6 a {
   color: inherit;
 }
 
+.margin-top-100 {
+  margin-top: 100px;
+}
+.margin-top-150 {
+  margin-top: 150px;
+}
+.margin-top-100 {
+  margin-top: 100px;
+}
+.margin-top-150 {
+  margin-top: 150px;
+}
+
 /* ================ Lists ================== */
 ul {
   margin: 0;
@@ -423,7 +436,7 @@ img.d-block.w-100 {
 }
 /* Breadcrumb Section Styling */
 .breadcrumb-navigation a:hover {
-  color: #fab600;
+  color: #fab600 !important;
   transition: all 0.5s ease-out;
 }
 .breadcrumb-title .title-after {
