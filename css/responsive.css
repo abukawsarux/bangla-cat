@@ -4,6 +4,12 @@
 
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
+  .breadcrumb-img {
+    height: 400px !important;
+  }
+  .breadcrumb-img.heavy-machinery-and-equipment {
+    height: 550px !important;
+  }
 }
 
 /* Portrait tablets and small desktops */
@@ -26,6 +32,12 @@
   .footer .footer-middle {
     grid-template-columns: repeat(3, 1fr);
   }
+  .breadcrumb-img {
+    height: 400px !important;
+  }
+  .breadcrumb-img.heavy-machinery-and-equipment {
+    height: 450px !important;
+  }
 }
 
 /* Landscape phones and portrait tablets */
@@ -37,7 +49,10 @@
     display: flex;
   }
   .breadcrumb-img {
-    height: 400px;
+    height: 400px !important;
+  }
+  .breadcrumb-img.heavy-machinery-and-equipment {
+    height: 500px !important;
   }
   .breadcrumb-content {
     margin-top: 40px;
@@ -130,6 +145,9 @@
   }
   .breadcrumb-img {
     height: 400px !important;
+  }
+  .breadcrumb-img.heavy-machinery-and-equipment {
+    height: 650px !important;
   }
   .breadcrumb-content {
     margin-top: 40px;
