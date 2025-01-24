@@ -6,7 +6,10 @@
   margin-top: 80px;
   border: 1px solid #707070;
 }
-
+.footer a:hover {
+  color: #fab600 !important;
+  transition: all 0.6s;
+}
 .footer .social-media {
   padding: 15px 20px;
   background-color: #fab600;
