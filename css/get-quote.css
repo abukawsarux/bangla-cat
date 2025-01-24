@@ -1,0 +1,87 @@
+.map-section-bg {
+  background-image: url(../images/get-quote/location-map-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 100px;
+  /* background-color: #0F100D; */
+}
+.map-breadcrumb-container {
+  background-color: rgba(0, 0, 0, 0.43);
+  min-height: 695px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.map-breadcrumb-container .breadcrumb-title {
+  font-size: 2rem;
+  color: #fff; /* White color for text contrast */
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.map-breadcrumb-container .breadcrumb-subtitle {
+  font-size: 1.2rem;
+  color: #fff;
+  line-height: 1.5;
+}
+.service-office-title {
+  color: #ffa500;
+  font-size: 45px;
+}
+.service-title {
+  color: #ffa500;
+  font-size: 48px;
+}
+.service-subtitle {
+  font-size: 32px;
+  letter-spacing: 0px;
+  line-height: 20%;
+  margin-top: 20px;
+  font-style: italic;
+  color: white;
+}
+.service-address {
+  font-size: 26px;
+  letter-spacing: 0px;
+  line-height: 100%;
+  color: white;
+}
+.office-title {
+  color: #ffa500;
+  font-size: 26px;
+}
+
+.office-subtitle {
+  font-size: 20px;
+  color: white;
+}
+.map-container{
+    margin-top: 80px;
+}
+ .map-container .google-map-text {
+ font-size: 26px;
+ color: black;
+ text-align: right;
+}
+
+
+
+
+
+
+
+/* responsive  */
+/* Media Queries for Medium Devices (≥768px) */
+@media (max-width: 991px) {
+    .map-section-bg {
+     
+        padding-bottom: 60px;
+
+      }
+    .map-breadcrumb-container {
+      min-height: 400px;
+    }
+    .map-container{
+        margin-top: 50px;
+    }
+  
+  }
