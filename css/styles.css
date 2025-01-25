@@ -15,6 +15,10 @@
   box-sizing: border-box; /* Ensures consistent sizing */
   /* overflow: hidden; */
 }
+html{
+overflow-x: hidden;
+scroll-behavior: smooth;
+}
 
 body {
   font-family: "UniversCondensed", sans-serif;

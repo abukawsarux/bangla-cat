@@ -95,3 +95,7 @@ document
       content.style.height = "auto"; // Reset height to auto after animation
     }
   });
+
+
+
+  
