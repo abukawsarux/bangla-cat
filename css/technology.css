@@ -1,0 +1,5 @@
+.equal-height-img {
+  height: 350px; /* Set the height you want */
+  width: 100%; /* Make the width responsive */
+  object-fit: cover; /* Ensures the image is cropped proportionally */
+}
