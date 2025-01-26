@@ -7,6 +7,14 @@
 .news-content.collapsed {
   height: 310px; /* Maintain the collapsed height */
 }
+.news-content-2 {
+  height: 310px; /* Collapsed height */
+  overflow: hidden;
+  transition: height 0.5s ease; /* Smooth transition for height */
+}
+.news-content-2.collapsed {
+  height: 320px; /* Maintain the collapsed height */
+}
 /* Breadcrumb */
 .company-breadcrumb-section {
   position: relative;
