@@ -204,7 +204,8 @@ label {
 }
 /* ================ primary card style for all pages ================== */
 
-.b-cat-card-container {
+.b-cat-card-container,
+.b-cat-card-container-2 {
   border: 1px solid #707070;
   padding-left: 18px;
   padding-right: 18px;
@@ -233,6 +234,14 @@ label {
   transition: all 0.5s ease-out;
 }
 
+.b-cat-card-container-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px; /* Adjust the gap between items */
+}
+.b-cat-card-container-2 img {
+  width: 100%;
+}
 .card-img-top {
   height: 250px;
   width: 100%;
