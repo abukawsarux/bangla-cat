@@ -23,11 +23,12 @@
 .footer .social-icon img {
   width: 28px;
   height: auto;
-  transition: 0.3s ;
+  transition: all .5s ;
 }
 
 .footer .social-icon img:hover{
-  background-color: white;
+  border-radius: 999px;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(305deg) brightness(103%) contrast(103%);
   border-radius: 999px;
 }
 .footer .customer-care {
