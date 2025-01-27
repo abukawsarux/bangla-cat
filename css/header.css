@@ -113,7 +113,7 @@
 /* When mouse leaves, delay the fade out */
 .nav-popup-container {
   /* Longer delay when hiding */
-  transition-delay: 0.5s, 0.5s;
+  transition-delay: 0.2s, 0.2s;
 }
 
 /* Optional: Add transition delay for child elements */
