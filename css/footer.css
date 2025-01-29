@@ -23,12 +23,13 @@
 .footer .social-icon img {
   width: 28px;
   height: auto;
-  transition: all .5s ;
+  transition: all 0.5s;
 }
 
-.footer .social-icon img:hover{
+.footer .social-icon img:hover {
   border-radius: 999px;
-  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(305deg) brightness(103%) contrast(103%);
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(305deg)
+    brightness(103%) contrast(103%);
   border-radius: 999px;
 }
 .footer .customer-care {
@@ -293,8 +294,8 @@
 /* Label styling */
 .quote-label {
   font-size: 20px;
-  font-weight: bold;
-  color: #555;
+  font-weight: 500;
+  color: #000000;
 }
 
 /* Input field styling */
@@ -302,17 +303,25 @@
 .quote-textarea {
   font-size: 14px;
   padding: 12px 15px;
-  border-radius: 4px;
-  background-color: #f5f5f5;
+  border-radius: 0px;
+  background-color: #eeeeee;
   transition: border-color 0.3s;
+  border-bottom: 1px solid #707070;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
 }
 
 .quote-input:focus,
 .quote-textarea:focus {
-  border-color: #f5f5f5;
-  background-color: #f5f5f5;
+  border-color: #707070;
+  background-color: #eeeeee;
   outline: none;
   box-shadow: none;
+  border-bottom: 1px solid;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
 }
 
 /* Submit button styling */
@@ -324,7 +333,7 @@
   color: #fff;
   border: none;
   padding: 10px 20px;
-  border-radius: 4px;
+  border-radius: 0px;
   cursor: pointer;
   transition: background-color 0.3s;
 }

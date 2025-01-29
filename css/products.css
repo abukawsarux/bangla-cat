@@ -2,7 +2,6 @@
 .product-details-wrap {
   background: #f6f7f7;
   margin-top: 300px;
-
 }
 .single-pro-content {
   position: relative;
@@ -64,7 +63,7 @@
   height: 100%;
 }
 
-.services-links a {
+.services-links li {
   padding: 8px 20px;
   background: #ffa500 0% 0% no-repeat padding-box;
   box-shadow: 0px 4px 8px rgba(22, 22, 21, 0.6); /* Subtle elevation effect */
