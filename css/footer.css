@@ -240,7 +240,7 @@
 .menu-wrapper {
   position: fixed;
   bottom: 40px;
-  right: 50px;
+  right: 12px;
 }
 
 .menu-wrapper:hover .circle {

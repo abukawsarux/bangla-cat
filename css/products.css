@@ -29,6 +29,7 @@
 /* Marine Solutions Page Start */
 .functioning-fields {
   display: flex;
+  flex-wrap: wrap;
   gap: 16px;
 }
 .marine-solutions .product-title {

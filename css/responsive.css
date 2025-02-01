@@ -8,7 +8,7 @@
     height: 400px !important;
   }
   .breadcrumb-img.heavy-machinery-and-equipment,
-  .breadcrumb-img.technology {
+  .breadcrumb-img.technology, .breadcrumb-img.parts-breadcrumb  {
     height: 550px !important;
   }
 }
@@ -37,7 +37,7 @@
     height: 400px !important;
   }
   .breadcrumb-img.heavy-machinery-and-equipment,
-  .breadcrumb-img.technology {
+  .breadcrumb-img.technology, .breadcrumb-img.parts-breadcrumb  {
     height: 450px !important;
   }
 }
@@ -54,7 +54,7 @@
     height: 400px !important;
   }
   .breadcrumb-img.heavy-machinery-and-equipment,
-  .breadcrumb-img.technology {
+  .breadcrumb-img.technology, .breadcrumb-img.parts-breadcrumb  {
     height: 500px !important;
   }
   .breadcrumb-content {
@@ -150,7 +150,7 @@
     height: 400px !important;
   }
   .breadcrumb-img.heavy-machinery-and-equipment,
-  .breadcrumb-img.technology {
+  .breadcrumb-img.technology, .breadcrumb-img.parts-breadcrumb  {
     height: 650px !important;
   }
   .breadcrumb-content {
