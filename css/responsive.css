@@ -8,7 +8,8 @@
     height: 400px !important;
   }
   .breadcrumb-img.heavy-machinery-and-equipment,
-  .breadcrumb-img.technology, .breadcrumb-img.parts-breadcrumb  {
+  .breadcrumb-img.technology,
+  .breadcrumb-img.parts-breadcrumb {
     height: 550px !important;
   }
 }
@@ -37,7 +38,8 @@
     height: 400px !important;
   }
   .breadcrumb-img.heavy-machinery-and-equipment,
-  .breadcrumb-img.technology, .breadcrumb-img.parts-breadcrumb  {
+  .breadcrumb-img.technology,
+  .breadcrumb-img.parts-breadcrumb {
     height: 450px !important;
   }
 }
@@ -54,7 +56,8 @@
     height: 400px !important;
   }
   .breadcrumb-img.heavy-machinery-and-equipment,
-  .breadcrumb-img.technology, .breadcrumb-img.parts-breadcrumb  {
+  .breadcrumb-img.technology,
+  .breadcrumb-img.parts-breadcrumb {
     height: 500px !important;
   }
   .breadcrumb-content {
@@ -80,31 +83,14 @@
     margin: 15px 14px 40px 0px;
     transition: 0.5s;
   }
-  .slider-content h5 {
-    color: black;
-    font-size: 12px;
-  }
-  .slider-content h2 {
-    color: black !important;
-    font-size: 20px;
-  }
+
   .slider-content p {
     font-size: 14px;
   }
   .section-title {
     font-size: 24px;
   }
-  .carousel-indicators .slider-dot {
-    width: 12px;
-    height: 12px;
-    border-radius: 100%;
-    border: 1px solid #000;
-    background-color: transparent !important;
-    opacity: 1;
-  }
-  .carousel-indicators .slider-dot.active {
-    background-color: #000 !important;
-  }
+
   .key-business-section {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -150,7 +136,8 @@
     height: 400px !important;
   }
   .breadcrumb-img.heavy-machinery-and-equipment,
-  .breadcrumb-img.technology, .breadcrumb-img.parts-breadcrumb  {
+  .breadcrumb-img.technology,
+  .breadcrumb-img.parts-breadcrumb {
     height: 650px !important;
   }
   .breadcrumb-content {
